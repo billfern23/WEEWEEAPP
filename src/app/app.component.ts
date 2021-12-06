@@ -7,4 +7,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'assignment3';
+  selected:number[] = []
+  total:number = 0
+
+ setSelected(n:number[]) {
+   this.selected = n
+
+ }
+
+ setTotal(n:number){
+   this.total = n
+ }
+
 }

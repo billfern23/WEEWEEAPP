@@ -1,0 +1,13 @@
+<div>
+
+
+    <Button *ngFor="let number of buttonsArray" (click)="clicker(number)" 
+     [ngStyle]="{'backgroundColor': number.flag ===  true ? 'blue' :'red'}">
+    {{number.value}}
+    </Button>
+    <Button [disabled] = "flagClear" (click)="clear()"> Clear</Button>
+    <Button [disabled] = "flagClear"> Cash</Button>
+    </div>
+
+
+
