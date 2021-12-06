@@ -9,10 +9,11 @@ export class LotterynumbersComponent implements OnInit {
   title = 'assignment3';
   buttonsArray:{value:number, flag:Boolean}[] = [];
   flagButton:Boolean = false
+  flagClearAmount:Boolean = false;
   currentNumber:number = 0
   selected:number[] = []
   s:number = 1
-  flagClear:Boolean = true
+  flagClear:boolean = true
   constructor() { }
 
    ngOnInit(){
@@ -25,6 +26,7 @@ export class LotterynumbersComponent implements OnInit {
     
   }
   @Output() pickedNumber = new EventEmitter<number[]> ();
+  @Output() flagTotal = new EventEmitter<boolean> ();
   clicker(n:{value:number, flag:Boolean}){
 
     if(this.selected.length < 5 && n.flag === false){
@@ -37,6 +39,9 @@ export class LotterynumbersComponent implements OnInit {
     }
     if(this.selected.length === 5){
       this.flagClear = false;
+      const flagTotal = false
+    this.flagTotal.emit(flagTotal)
+  
     }
  
      //this.flagButton = (!this.flagButton)
@@ -59,6 +64,9 @@ export class LotterynumbersComponent implements OnInit {
    }
    this.selected = []
    const pickedNumber = this.selected
+
+   const flagTotal = true
+    this.flagTotal.emit(flagTotal)
    this.pickedNumber.emit(pickedNumber)
 
   }
