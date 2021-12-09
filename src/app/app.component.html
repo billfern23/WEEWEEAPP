@@ -1,6 +1,10 @@
 
 
+<app-header></app-header>
+ <body>
+    <app-cash (newtotal) = "setTotal($event)" [flag] = "flagtotal" [t] = "total"></app-cash>
+    <app-lotterynumbers (pickedNumber) = "setSelected($event)" (flagTotal)="setflag($event)"></app-lotterynumbers>
+    <app-summary [s]="selected" [total]="total" ></app-summary>
+ </body>  
 
-<app-cash (newtotal) = "setTotal($event)" [flag] = "flagtotal" [t] = "total"></app-cash>
-<app-lotterynumbers (pickedNumber) = "setSelected($event)" (flagTotal)="setflag($event)"></app-lotterynumbers>
-<app-summary [s]="selected" [total]="total" ></app-summary>
+

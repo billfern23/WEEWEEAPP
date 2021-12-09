@@ -1,13 +1,16 @@
-<div>
+<div class="lotteryButtons">
 
 
-    <Button *ngFor="let number of buttonsArray" (click)="clicker(number)" 
-     [ngStyle]="{'backgroundColor': number.flag ===  true ? 'blue' :'red'}">
+    <Button *ngFor="let number of buttonsArray" (click)="clicker(number)" class="actualButtons"
+     [ngStyle]="{'backgroundColor': number.flag ===  true ? 'white' :'#640440'}">
     {{number.value}}
     </Button>
-    <Button [disabled] = "flagClear" (click)="clear()"> Clear</Button>
-    <Button [disabled] = "flagClear"> Cash</Button>
-    </div>
+    <Button class="cashButton"[disabled] = "flagClear"> CASH</Button>
+    <Button class="clear" [disabled] = "flagClear" (click)="clear()"> CLEAR</Button>
+
+    
+    
+</div>
 
 
 

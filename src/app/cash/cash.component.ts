@@ -9,6 +9,7 @@ import { Component, Output, EventEmitter, Input, Injectable } from '@angular/cor
 export class CashComponent  {
 total:number = 0;
 flag:boolean = false;
+isCLicked:boolean = false;
 @Output() newtotal = new EventEmitter<number> ();
 @Input()
 public setFlag(flag:boolean){
@@ -30,8 +31,7 @@ public setTotal(total:number){
 
 addAmount(amount:number){
   
-console.log(1)
-console.log(this.flag)
+  this.isCLicked = true
 if(this.flag){
   console.log("heere")
   this.total = amount * 0
@@ -44,6 +44,7 @@ else {
 
 }
 this.newtotal.emit(this.total)
+this.isCLicked = false
 
   
 

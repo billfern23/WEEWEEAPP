@@ -6,17 +6,21 @@ import { AppComponent } from './app.component';
 import { CashComponent } from './cash/cash.component';
 import { LotterynumbersComponent } from './lotterynumbers/lotterynumbers.component';
 import { SummaryComponent } from './summary/summary.component';
+import { HeaderComponent } from './header/header.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
     AppComponent,
     CashComponent,
     LotterynumbersComponent,
-    SummaryComponent
+    SummaryComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

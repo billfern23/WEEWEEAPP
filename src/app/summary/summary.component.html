@@ -1,5 +1,25 @@
-<p>summary works!</p>
-<div>
-    <p *ngFor ="let select of s"> Mark: {{select}}</p>
+
+<div class="summary">
+    <h1>Selected Numbers</h1>
+    <div style="width:100%; border:1px solid purple"></div>
+    <div>
+
+        <b>
+            <p style="font-size: 30px;" class="mark"*ngFor ="let select of s"> Mark          : {{select}}</p>
+        </b>
+    </div>
+
+    
+<div class="total">
+
+    <b>
+
+
+        <p> Total: ${{total}} </p>
+    </b>
 </div>
-<p> Total: ${{total}} </p>
+
+
+</div>
+
+

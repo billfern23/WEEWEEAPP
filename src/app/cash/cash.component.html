@@ -1,7 +1,14 @@
-<p>cash works!</p>
 
-<Button (click) ="addAmount(1)">$1</Button>
-<Button (click) ="addAmount(5)">$5</Button>
-<Button (click) ="addAmount(10)">$10</Button>
-<Button (click) ="addAmount(20)">$20</Button>
-{{flag}}
+<div class="cash">
+    <img src="../../assets/dice.png" style="height: 25vh; padding-left: 30px;"/>
+    <br />
+    <div class="cashButton">
+
+        <Button (click) ="addAmount(1)" >$1</Button>
+        <Button (click) ="addAmount(5)">$5</Button>
+        <br />
+        <Button (click) ="addAmount(10)">$10</Button>
+        <Button (click) ="addAmount(20)">$20</Button>
+    </div>
+  
+</div>

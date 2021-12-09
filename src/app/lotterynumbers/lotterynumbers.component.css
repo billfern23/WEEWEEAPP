@@ -1,0 +1,46 @@
+.lotteryButtons{
+    border: 10px solid #640440;
+    width: 50%;
+    float:left;
+    height:670px;
+    
+}
+.actualButtons{
+    margin: 25px;
+    border-radius: 50%;
+    height: 100px;
+    width: 95px;
+    font-size: 50px;
+    color:#d4af37; 
+    border: 10px solid purple
+    
+}
+.clear {
+    margin: 25px;
+    border-radius: 10px;
+    height: 100px;
+    width: 200px;
+    color: white;
+    font-size: 50px;
+    background-color: rgb(202, 126, 202);
+    border: 5px solid purple
+}
+
+
+Button:enabled{
+    background-color: #640440;
+    color: #d4af37;
+    border: 10px solid purple
+
+}
+
+.cashButton{
+    margin: 25px;
+    border-radius: 10px;
+    height: 100px;
+    width: 200px;
+    color: white;
+    font-size: 50px;
+    background-color: rgb(202, 126, 202);
+    border: 5px solid purple
+}

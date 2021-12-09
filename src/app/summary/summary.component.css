@@ -1,0 +1,25 @@
+.summary{
+    background: linear-gradient(rgb(255, 242, 107),white);
+    width: 20%;
+    float:left;
+    height:670px;
+    border: 10px solid #640440;
+}
+
+.total{
+    width: 100%;
+border-top: 1px solid purple;
+position: absolute;
+bottom: 0px;
+font-size: 30px;
+
+}
+
+.mark{
+    background-color: white;
+    border-bottom: 1px solid purple;
+    
+}
+
+
+

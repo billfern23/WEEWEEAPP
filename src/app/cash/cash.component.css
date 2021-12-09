@@ -1,0 +1,29 @@
+.cash{
+    background-color: rgb(255, 242, 107);
+    width: 30%;
+    float:left;
+    height:670px;
+    border: 10px solid #640440;
+    
+}
+Button{
+    margin: 25px;
+    border-radius: 50%;
+    height: 160px;
+    width: 160px;
+    font-size: 50px;
+    background-color: #640440;
+    color:#d4af37; 
+    border: 10px solid purple
+    
+}
+.cash{
+    padding-left: 30px;
+}
+
+Button:active{
+    background-color: white;
+}
+Button:disabled{
+    background-color: white;
+}
