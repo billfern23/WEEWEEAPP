@@ -33,7 +33,7 @@ addAmount(amount:number){
   
   this.isCLicked = true
 if(this.flag){
-  console.log("heere")
+  
   this.total = amount * 0
   this.flag = false
   this.total = this.total + amount

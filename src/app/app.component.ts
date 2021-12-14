@@ -29,7 +29,7 @@ export class AppComponent {
  setflag(f:boolean){
   
   this.flagtotal= f
-  console.log(1)
+  
   if(this.flagtotal){
     this.total=0
   }
