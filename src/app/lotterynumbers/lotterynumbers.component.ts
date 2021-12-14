@@ -47,12 +47,12 @@ export class LotterynumbersComponent implements OnInit {
       n.flag = (!n.flag)
     
     }
-
-    if(this.selected.length ==4 ){
-      this.flagClear = false;
-      const flagTotal = false
-      this.flagTotal.emit(flagTotal)
-    }
+    //this is a shortcut I applied, since the buttons change the array but at the buttom not here, thats why
+    // if(this.selected.length ==4 ){
+    //   this.flagClear = false;
+    //   const flagTotal = false
+    //   this.flagTotal.emit(flagTotal)
+    // }
   
     if(this.selected.length === 5){
       
@@ -79,7 +79,11 @@ export class LotterynumbersComponent implements OnInit {
     }
     const pickedNumber = this.selected
     this.pickedNumber.emit(pickedNumber)
-    
+    if(this.selected.length ==5 ){
+      this.flagClear = false;
+      const flagTotal = false
+      this.flagTotal.emit(flagTotal)
+    }
    }
  
 
