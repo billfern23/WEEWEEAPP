@@ -24,5 +24,5 @@
   <li>Summary could be the child of two components, but is a child of none because that doesnt support seperating components.</li>
 </ol>
 
-<b>** APP IS NOT RESPONSIVE, use ZOOM and ZOOm out to get correct UI</b>
+<b>** APP IS NOT RESPONSIVE, use ZOOM in and ZOOm out to get correct UI</b>
 <img src="UI.PNG" />
