@@ -14,4 +14,4 @@
 
 
 <h2>Component tree</h2>
-<img src="./component.PNG" />
+<img src="component.PNG" />
